@@ -5,7 +5,7 @@ import { useSession, signOut } from "next-auth/react";
 import { useState } from "react";
 import { Logo } from "./logo";
 import { mainNav } from "@/lib/nav";
-import { Menu, X, LogOut, LayoutDashboard, Github } from "lucide-react";
+import { Menu, X, LogOut, LayoutDashboard } from "lucide-react";
 
 export function Header() {
   const { data: session } = useSession();
@@ -18,7 +18,7 @@ export function Header() {
         <Logo size="sm" />
 
         {/* Center: Nav (desktop) */}
-        <nav className="hidden md:flex items-center gap-1">
+        <nav className="hidden md:flex items-center gap-1" aria-label="Main navigation">
           {mainNav.map((item) => (
             <Link
               key={item.href}
@@ -32,16 +32,6 @@ export function Header() {
 
         {/* Right: Actions */}
         <div className="hidden md:flex items-center gap-3">
-          <a
-            href="https://github.com/yusufsafary/agent-browser"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-sm text-[#9090A8] hover:text-[#F0F0FF] transition-colors"
-          >
-            <Github className="h-4 w-4" />
-            <span className="hidden lg:inline">GitHub</span>
-          </a>
-
           {session ? (
             <div className="flex items-center gap-2">
               <Link
@@ -74,6 +64,7 @@ export function Header() {
           className="md:hidden p-2 text-[#9090A8] hover:text-[#F0F0FF] transition-colors"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
+          aria-expanded={mobileOpen}
         >
           {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>

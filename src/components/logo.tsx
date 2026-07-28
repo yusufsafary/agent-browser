@@ -11,7 +11,6 @@ export function Logo({ size = "md", showText = true }: LogoProps) {
 
   return (
     <Link href="/" className="flex items-center gap-2.5 group select-none">
-      {/* Logo mark */}
       <div
         className="relative flex-shrink-0"
         style={{ width: dims, height: dims }}
@@ -24,81 +23,74 @@ export function Logo({ size = "md", showText = true }: LogoProps) {
           xmlns="http://www.w3.org/2000/svg"
           className="transition-transform duration-300 group-hover:scale-105"
         >
-          {/* Browser window outer frame */}
-          <rect
-            x="1"
-            y="1"
-            width="34"
-            height="34"
-            rx="7"
-            fill="#050508"
-            stroke="#00E5CC"
-            strokeWidth="1.5"
-          />
-          {/* Top bar */}
-          <rect
-            x="1"
-            y="1"
-            width="34"
-            height="9"
-            rx="7"
-            fill="#0D0D14"
-          />
-          <rect x="1" y="7" width="34" height="3" fill="#0D0D14" />
-          {/* Dots */}
-          <circle cx="7" cy="5.5" r="1.5" fill="#EF4444" />
-          <circle cx="12" cy="5.5" r="1.5" fill="#F59E0B" />
-          <circle cx="17" cy="5.5" r="1.5" fill="#10B981" />
-          {/* Address bar */}
-          <rect
-            x="20"
-            y="3.5"
-            width="12"
-            height="4"
-            rx="2"
-            fill="#1A1A2E"
-          />
-          {/* "A" letterform in viewport */}
+          <defs>
+            <linearGradient id="ab-grad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stopColor="#00E5CC" />
+              <stop offset="100%" stopColor="#7C3AED" />
+            </linearGradient>
+            <linearGradient id="ab-stroke" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stopColor="#00E5CC" stopOpacity="0.9" />
+              <stop offset="100%" stopColor="#7C3AED" stopOpacity="0.9" />
+            </linearGradient>
+            <clipPath id="ab-clip">
+              <rect x="2" y="2" width="32" height="32" rx="9" />
+            </clipPath>
+          </defs>
+
+          {/* Background tile */}
+          <rect x="2" y="2" width="32" height="32" rx="9" fill="#0A0A12" />
+
+          {/* Subtle grid texture */}
+          <rect x="2" y="2" width="32" height="32" rx="9" fill="url(#ab-grad)" fillOpacity="0.06" />
+
+          {/* Outer border with gradient */}
+          <rect x="2" y="2" width="32" height="32" rx="9" stroke="url(#ab-stroke)" strokeWidth="1.2" />
+
+          {/* Left vertical bar — the "l" stem of an agent pointer */}
+          <rect x="9" y="10" width="3" height="17" rx="1.5" fill="url(#ab-grad)" />
+
+          {/* Horizontal crossbar (browser address bar metaphor) */}
+          <rect x="9" y="10" width="12" height="3" rx="1.5" fill="url(#ab-grad)" />
+
+          {/* Short bottom foot — completes the cursor shape */}
+          <rect x="9" y="23.5" width="7" height="3" rx="1.5" fill="url(#ab-grad)" fillOpacity="0.7" />
+
+          {/* Right element — the ">" execution chevron */}
           <path
-            d="M11 26L15.5 14H20.5L25 26"
-            stroke="#00E5CC"
-            strokeWidth="2"
+            d="M20 15 L26 18.5 L20 22"
+            stroke="url(#ab-stroke)"
+            strokeWidth="2.2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-          <path
-            d="M13 22H23"
-            stroke="#00E5CC"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
-          {/* Scan line accent */}
-          <line
-            x1="1"
-            y1="19"
-            x2="35"
-            y2="19"
-            stroke="#7C3AED"
-            strokeWidth="0.5"
-            strokeDasharray="2 3"
-            opacity="0.5"
-          />
+
+          {/* Tiny blink dot — cursor pulse */}
+          <circle cx="28.5" cy="25.5" r="1.8" fill="#00E5CC" fillOpacity="0.85" />
         </svg>
-        {/* Glow */}
+
+        {/* Hover glow */}
         <div
-          className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-          style={{
-            boxShadow: "0 0 12px rgba(0,229,204,0.4)",
-          }}
+          className="absolute inset-0 rounded-[9px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+          style={{ boxShadow: "0 0 14px rgba(0,229,204,0.35)" }}
         />
       </div>
-      {/* Wordmark */}
+
       {showText && (
         <span
-          className={`${textSize} font-bold tracking-tight text-[#F0F0FF] font-display leading-none`}
+          className={`${textSize} font-bold tracking-tight leading-none`}
           style={{ fontFamily: "var(--font-space-grotesk)" }}
         >
-          AGENT<span className="text-[#00E5CC]">.</span>BROWSER
+          <span className="text-[#F0F0FF]">agent</span>
+          <span
+            style={{
+              background: "linear-gradient(90deg, #00E5CC, #7C3AED)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}
+          >
+            browser
+          </span>
         </span>
       )}
     </Link>

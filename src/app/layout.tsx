@@ -97,7 +97,7 @@ const jsonLd = {
         "@type": "ImageObject",
         url: `${BASE_URL}/icon.png`,
       },
-      sameAs: ["https://github.com/yusufsafary/agent-browser"],
+      sameAs: ["https://agentbrowser.fun"],
     },
     {
       "@type": "SoftwareApplication",

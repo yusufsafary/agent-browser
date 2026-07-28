@@ -1,6 +1,6 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { Terminal, Zap, Shield, Globe, Github } from "lucide-react";
+import { Terminal, Zap, Shield, Globe } from "lucide-react";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -166,22 +166,18 @@ export default function AboutPage() {
             className="text-xl font-bold text-[#F0F0FF] mb-3"
             style={{ fontFamily: "var(--font-space-grotesk)" }}
           >
-            Join the project
+            Start automating today
           </h2>
           <p className="text-[#9090A8] text-sm mb-6">
-            AGENT BROWSER is open source. Explore the code, open issues, and
-            contribute on GitHub.
+            Agent Browser is production-ready. Install in seconds and give your AI agent full browser control.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a
-              href="https://github.com/yusufsafary/agent-browser"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-5 py-2.5 bg-[#F0F0FF] text-[#050508] font-semibold rounded-xl hover:bg-[#D0D0E8] transition-all text-sm"
+            <Link
+              href="/docs/installation"
+              className="flex items-center gap-2 px-5 py-2.5 bg-[#00E5CC] text-[#050508] font-semibold rounded-xl hover:bg-[#00c9b3] transition-all text-sm"
             >
-              <Github className="h-4 w-4" />
-              View on GitHub
-            </a>
+              Get Started
+            </Link>
             <Link
               href="/docs"
               className="flex items-center gap-2 px-5 py-2.5 border border-[#1A1A2E] text-[#F0F0FF] rounded-xl hover:border-[#00E5CC40] transition-all text-sm"

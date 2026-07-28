@@ -11,12 +11,12 @@ export default function DockerPage() {
 
       <h2>Official image</h2>
       <CodeBlock
-        code={`docker pull ghcr.io/yusufsafary/agent-browser:latest`}
+        code={`docker pull agentbrowser/agent-browser:latest`}
       />
 
       <h2>Example Dockerfile</h2>
       <CodeBlock
-        code={`FROM ghcr.io/yusufsafary/agent-browser:latest
+        code={`FROM agentbrowser/agent-browser:latest
 
 WORKDIR /app
 COPY . .
@@ -32,7 +32,7 @@ CMD ["node", "agent.js"]`}
         code={`version: "3.8"
 services:
   agent:
-    image: ghcr.io/yusufsafary/agent-browser:latest
+    image: agentbrowser/agent-browser:latest
     environment:
       - AGENT_BROWSER_HEADED=false
     volumes:

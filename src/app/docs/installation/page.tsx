@@ -48,7 +48,8 @@ agent-browser install  # Download Chrome (first time)`} />
       </p>
 
       <h2>From source</h2>
-      <CodeBlock code={`git clone https://github.com/yusufsafary/agent-browser
+      <p>Download the latest release tarball from the <a href="https://agentbrowser.fun/docs/changelog" rel="noopener noreferrer">changelog page</a>, then build:</p>
+      <CodeBlock code={`tar -xzf agent-browser-latest.tar.gz
 cd agent-browser
 pnpm install
 pnpm build
