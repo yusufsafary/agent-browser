@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "About AGENT BROWSER — the next-generation browser automation platform built exclusively for AI agents.",
+    "About AGENT BROWSER - the next-generation browser automation platform built exclusively for AI agents.",
 };
 
 export default function AboutPage() {
@@ -57,7 +57,7 @@ export default function AboutPage() {
             AI agents are becoming the primary operators of browsers. They
             navigate forms, extract data, interact with complex web apps, and
             automate workflows at scale. The tools they use need to be
-            designed for them — compact output, deterministic targeting,
+            designed for them - compact output, deterministic targeting,
             minimal token overhead, and rock-solid reliability.
           </p>
           <p className="text-[#9090A8] leading-relaxed">
@@ -94,7 +94,7 @@ export default function AboutPage() {
                 icon: Shield,
                 title: "Web3-native identity",
                 color: "#7C3AED",
-                desc: "Authenticate with Solana wallets across multiple chains. Your sessions are yours — no centralized credential storage.",
+                desc: "Authenticate with Solana wallets across multiple chains. Your sessions are yours - no centralized credential storage.",
               },
               {
                 icon: Globe,

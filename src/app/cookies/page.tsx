@@ -66,7 +66,7 @@ const sections = [
       },
       {
         heading: "Security",
-        body: "Authentication tokens are stored in secure, HttpOnly cookies. Wallet authentication uses cryptographic signature verification — we never see your private key. Session data is encrypted at rest.",
+        body: "Authentication tokens are stored in secure, HttpOnly cookies. Wallet authentication uses cryptographic signature verification - we never see your private key. Session data is encrypted at rest.",
       },
       {
         heading: "Contact",

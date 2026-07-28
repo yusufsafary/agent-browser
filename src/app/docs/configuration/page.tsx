@@ -74,8 +74,8 @@ export default function ConfigurationPage() {
           {[
             ["headed", "--headed", "boolean", "false"],
             ["headless", "--headless", "boolean", "true"],
-            ["proxy", "--proxy <url>", "string", "—"],
-            ["profile", "--profile <path>", "string", "—"],
+            ["proxy", "--proxy <url>", "string", "-"],
+            ["profile", "--profile <path>", "string", "-"],
             ["userAgent", "--user-agent <ua>", "string", "Chrome default"],
             ["hideScrollbars", "--hide-scrollbars", "boolean", "true"],
             ["ignoreHttpsErrors", "--ignore-https-errors", "boolean", "false"],

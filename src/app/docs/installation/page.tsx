@@ -16,7 +16,7 @@ export default function InstallationPage() {
       <CodeBlock code={`npm install -g agent-browser
 agent-browser install  # Download Chrome from Chrome for Testing (first time)`} />
       <p>
-        This is the fastest option — commands run through the native Rust CLI
+        This is the fastest option - commands run through the native Rust CLI
         directly with sub-millisecond parsing overhead.
       </p>
 
@@ -85,16 +85,16 @@ agent-browser doctor --json              # Structured output`} />
       <h2>Requirements</h2>
       <ul>
         <li>
-          <strong>Chrome</strong> — Run{" "}
+          <strong>Chrome</strong> - Run{" "}
           <code>agent-browser install</code> to download Chrome from Chrome for
           Testing.
         </li>
         <li>
-          <strong>Node.js 24+ and pnpm 11+</strong> — Only needed when
+          <strong>Node.js 24+ and pnpm 11+</strong> - Only needed when
           building from source.
         </li>
         <li>
-          <strong>Rust</strong> — Only needed when building from source.
+          <strong>Rust</strong> - Only needed when building from source.
         </li>
       </ul>
 

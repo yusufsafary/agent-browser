@@ -113,7 +113,7 @@ export default function HomePage() {
           <div className="flex justify-center mb-6">
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#00E5CC30] bg-[#00E5CC08] text-xs font-mono text-[#00E5CC]">
               <span className="w-1.5 h-1.5 rounded-full bg-[#00E5CC] animate-pulse" />
-              v1.0 — Now with Solana wallet auth
+              v1.0 - Now with Solana wallet auth
             </span>
           </div>
 

@@ -115,19 +115,19 @@ agent-browser close`}
       <h2>Next steps</h2>
       <ul>
         <li>
-          <Link href="/docs/installation">Installation guide</Link> — all
+          <Link href="/docs/installation">Installation guide</Link> - all
           install methods
         </li>
         <li>
-          <Link href="/docs/commands">Command reference</Link> — complete list
+          <Link href="/docs/commands">Command reference</Link> - complete list
           of all 50+ commands
         </li>
         <li>
-          <Link href="/docs/configuration">Configuration</Link> — persistent
+          <Link href="/docs/configuration">Configuration</Link> - persistent
           config file options
         </li>
         <li>
-          <Link href="/how-to">How-to guides</Link> — step-by-step recipes
+          <Link href="/how-to">How-to guides</Link> - step-by-step recipes
         </li>
       </ul>
     </>

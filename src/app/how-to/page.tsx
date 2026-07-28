@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How To",
   description:
-    "Step-by-step guides for common AGENT BROWSER tasks — login flows, scraping, form automation, and more.",
+    "Step-by-step guides for common AGENT BROWSER tasks - login flows, scraping, form automation, and more.",
 };
 
 const guides = [
