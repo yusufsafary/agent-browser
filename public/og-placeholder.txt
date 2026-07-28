@@ -1,0 +1,1 @@
+OG image placeholder - replace with actual PNG at /public/og-image.png

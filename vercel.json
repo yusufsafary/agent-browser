@@ -1,0 +1,8 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "env": {
+    "NEXTAUTH_URL": "https://agent-browser-yusufsafary.vercel.app"
+  }
+}

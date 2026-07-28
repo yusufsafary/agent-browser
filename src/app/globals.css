@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-space-grotesk: "Space Grotesk", sans-serif;
+  --font-geist-mono: "JetBrains Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-inter);
+  background: #050508;
+  color: #F0F0FF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(0, 229, 204, 0.3);
+  color: #00E5CC;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0D14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1A1A2E;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00E5CC30;
+}
+
+/* Code blocks */
+pre {
+  background: #0D0D14 !important;
+  border: 1px solid #1A1A2E;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  font-family: var(--font-geist-mono);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  position: relative;
+}
+
+code {
+  font-family: var(--font-geist-mono);
+  font-size: 0.875em;
+  background: rgba(0, 229, 204, 0.08);
+  border: 1px solid rgba(0, 229, 204, 0.15);
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  color: #00E5CC;
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #C9D1D9;
+}
+
+/* Prose styles for docs */
+.prose {
+  color: #B0B0C8;
+  line-height: 1.75;
+}
+
+.prose h1 {
+  font-family: var(--font-space-grotesk);
+  font-size: 2rem;
+  font-weight: 700;
+  color: #F0F0FF;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.prose h2 {
+  font-family: var(--font-space-grotesk);
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: #F0F0FF;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.prose h3 {
+  font-family: var(--font-space-grotesk);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #D0D0E8;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose p {
+  margin-bottom: 1rem;
+}
+
+.prose a {
+  color: #00E5CC;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 229, 204, 0.3);
+  transition: border-color 0.2s;
+}
+.prose a:hover {
+  border-bottom-color: #00E5CC;
+}
+
+.prose ul, .prose ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose li {
+  margin-bottom: 0.25rem;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.prose th {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6B7280;
+  border-bottom: 1px solid #1A1A2E;
+}
+
+.prose td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #1A1A2E;
+  color: #9090A8;
+}
+
+.prose tr:last-child td {
+  border-bottom: none;
+}
+
+/* Wallet adapter overrides */
+.wallet-adapter-button {
+  background: transparent !important;
+  border: 1px solid #1A1A2E !important;
+  color: #F0F0FF !important;
+  font-family: var(--font-inter) !important;
+  font-size: 0.875rem !important;
+  border-radius: 8px !important;
+  padding: 0.5rem 1rem !important;
+  transition: all 0.2s !important;
+}
+.wallet-adapter-button:hover {
+  border-color: #00E5CC !important;
+  background: rgba(0,229,204,0.05) !important;
+}
+.wallet-adapter-modal-wrapper {
+  background: #0D0D14 !important;
+  border: 1px solid #1A1A2E !important;
+}
+
+/* Glow effects */
+.glow-teal {
+  box-shadow: 0 0 20px rgba(0, 229, 204, 0.15), 0 0 60px rgba(0, 229, 204, 0.05);
+}
+
+.glow-violet {
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.2), 0 0 60px rgba(124, 58, 237, 0.05);
+}
+
+/* Terminal cursor blink */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #00E5CC 0%, #7C3AED 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-orange {
+  background: linear-gradient(135deg, #F97316 0%, #EF4444 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
