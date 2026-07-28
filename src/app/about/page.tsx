@@ -7,7 +7,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "About AGENT BROWSER - the next-generation browser automation platform built exclusively for AI agents.",
+    "About Agent Browser — a native Rust browser automation CLI built from scratch for agents and LLMs, not retrofitted from human-first tools. Learn why we built it differently.",
+  alternates: { canonical: "https://agentbrowser.fun/about" },
+  openGraph: {
+    url: "https://agentbrowser.fun/about",
+    title: "About Agent Browser",
+    description:
+      "Agent Browser was built for agents from day one — not retrofitted. Native Rust, ref-based snapshots, and zero-config observability.",
+  },
 };
 
 export default function AboutPage() {
@@ -41,7 +48,7 @@ export default function AboutPage() {
           <p className="text-base sm:text-lg text-[#9090A8] leading-relaxed">
             AGENT BROWSER started from a simple observation: every major
             browser automation tool was built for humans first, then
-            retrofitted for AI. We built ours the other way around.
+            retrofitted for agents. We built ours the other way around.
           </p>
         </div>
 

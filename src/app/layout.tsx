@@ -9,47 +9,47 @@ const BASE_URL = "https://agentbrowser.fun";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Agent Browser | AI Browser Automation Platform",
+    default: "Agent Browser | Browser Automation CLI for Agents & LLMs",
     template: "%s | Agent Browser",
   },
   description:
-    "The fastest browser automation platform built for AI agents. Native Rust speed, 50+ commands, Solana wallet auth, live dashboard, and zero-config observability.",
+    "Agent Browser is a native Rust CLI for browser automation built for agents and LLMs. 50+ commands, ref-based snapshots, MCP server, Solana wallet auth, and live session dashboard.",
   keywords: [
     "agent browser",
-    "browser automation",
-    "AI agents",
-    "AI browser",
-    "Solana wallet",
-    "web automation",
-    "CLI automation",
-    "Rust browser",
-    "headless browser",
-    "LLM browser",
-    "MCP server",
+    "browser automation CLI",
+    "browser automation for agents",
+    "LLM browser automation",
+    "MCP browser server",
     "playwright alternative",
     "puppeteer alternative",
+    "headless browser CLI",
+    "Rust browser automation",
+    "Claude browser tool",
+    "Cursor browser automation",
+    "agent browser tool",
+    "web scraping CLI",
+    "CDP automation",
+    "Solana wallet auth",
+    "browser MCP server",
   ],
   authors: [{ name: "Agent Browser" }],
   creator: "Agent Browser",
   publisher: "Agent Browser",
-  category: "technology",
-  alternates: {
-    canonical: BASE_URL,
-  },
+  category: "Developer Tools",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: BASE_URL,
     siteName: "Agent Browser",
-    title: "Agent Browser | AI Browser Automation Platform",
+    title: "Agent Browser | Browser Automation CLI for Agents & LLMs",
     description:
-      "The fastest browser automation platform built for AI agents. Native Rust speed, 50+ commands, Solana wallet auth, and zero-config observability.",
+      "Native Rust CLI for browser automation. 50+ commands, ref-based snapshots, MCP server, and live dashboard. Works with Claude, Cursor, and any shell-capable agent.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Agent Browser | AI Browser Automation Platform",
+    title: "Agent Browser | Browser Automation CLI for Agents & LLMs",
     description:
-      "The fastest browser automation platform built for AI agents. Native Rust speed, 50+ commands, Solana wallet auth, and zero-config observability.",
+      "Native Rust CLI for browser automation. 50+ commands, ref-based snapshots, MCP server, and live dashboard. Works with Claude, Cursor, and any shell-capable agent.",
     site: "@agentbrowser",
     creator: "@agentbrowser",
   },
@@ -63,9 +63,6 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  verification: {
-    google: "",
   },
 };
 
@@ -133,7 +130,6 @@ export default function RootLayout({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        <link rel="canonical" href={BASE_URL} />
         <meta name="theme-color" content="#050508" />
         <meta name="color-scheme" content="dark" />
         <meta name="ory-verify" content="orynth-1901c84d6dfd4c6e8ffd7286bcb3f5d7" />

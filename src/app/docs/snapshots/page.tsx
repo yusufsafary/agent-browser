@@ -1,7 +1,18 @@
 import { CodeBlock } from "@/components/code-block";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Snapshots & Refs" };
+export const metadata: Metadata = {
+  title: "Snapshots & Refs",
+  description:
+    "Agent Browser snapshots return a compact accessibility tree with @ref identifiers for deterministic element targeting. Use 200-400 tokens instead of 3000-5000 for full DOM.",
+  alternates: { canonical: "https://agentbrowser.fun/docs/snapshots" },
+  openGraph: {
+    url: "https://agentbrowser.fun/docs/snapshots",
+    title: "Snapshots and Refs — Agent Browser",
+    description:
+      "Snapshot returns a compact accessibility tree. Each element gets a @ref for fast, token-efficient interaction — no CSS selectors needed.",
+  },
+};
 
 export default function SnapshotsPage() {
   return (

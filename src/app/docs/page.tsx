@@ -2,7 +2,18 @@ import Link from "next/link";
 import { CodeBlock } from "@/components/code-block";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Overview" };
+export const metadata: Metadata = {
+  title: "Documentation",
+  description:
+    "Agent Browser documentation — browser automation CLI for agents and LLMs. Covers installation, 50+ commands, sessions, MCP server, snapshots, recording, and network control.",
+  alternates: { canonical: "https://agentbrowser.fun/docs" },
+  openGraph: {
+    url: "https://agentbrowser.fun/docs",
+    title: "Agent Browser Documentation",
+    description:
+      "Full documentation for Agent Browser. Installation, commands, sessions, MCP server, snapshots, recording, Docker, Vercel, and more.",
+  },
+};
 
 export default function DocsPage() {
   return (

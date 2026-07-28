@@ -1,6 +1,17 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Providers" };
+export const metadata: Metadata = {
+  title: "Browser Providers",
+  description:
+    "Agent Browser supports local Chrome, Browserbase, Browserless, and Amazon Bedrock AgentCore as browser backends. Switch providers with a single flag or config key.",
+  alternates: { canonical: "https://agentbrowser.fun/docs/providers" },
+  openGraph: {
+    url: "https://agentbrowser.fun/docs/providers",
+    title: "Agent Browser — Cloud Providers",
+    description:
+      "Use local Chrome or connect to Browserbase, Browserless, or AWS AgentCore. Switch with --provider flag or config key.",
+  },
+};
 
 export default function ProvidersPage() {
   return (

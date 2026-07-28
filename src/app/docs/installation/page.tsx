@@ -2,7 +2,18 @@ import { CodeBlock } from "@/components/code-block";
 import Link from "next/link";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Installation" };
+export const metadata: Metadata = {
+  title: "Installation",
+  description:
+    "Install Agent Browser on macOS, Linux, or Windows. Supports npm global install, Homebrew, Cargo, and Docker. Download Chrome for Testing with a single command.",
+  alternates: { canonical: "https://agentbrowser.fun/docs/installation" },
+  openGraph: {
+    url: "https://agentbrowser.fun/docs/installation",
+    title: "Install Agent Browser",
+    description:
+      "Install Agent Browser via npm, Homebrew, Cargo, or Docker. Works on macOS, Linux, and Windows.",
+  },
+};
 
 export default function InstallationPage() {
   return (

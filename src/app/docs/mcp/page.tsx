@@ -1,7 +1,18 @@
 import { CodeBlock } from "@/components/code-block";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "MCP Server" };
+export const metadata: Metadata = {
+  title: "MCP Server",
+  description:
+    "Agent Browser includes a built-in MCP stdio server. Configure it with Claude Desktop, Cursor, or any MCP client to give your agent direct browser control via typed tools.",
+  alternates: { canonical: "https://agentbrowser.fun/docs/mcp" },
+  openGraph: {
+    url: "https://agentbrowser.fun/docs/mcp",
+    title: "Agent Browser MCP Server",
+    description:
+      "Configure Agent Browser as an MCP server for Claude Desktop, Cursor, or any MCP-compatible client. All browser commands exposed as typed MCP tools.",
+  },
+};
 
 export default function McpPage() {
   return (

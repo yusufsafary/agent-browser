@@ -6,7 +6,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How To",
   description:
-    "Step-by-step guides for common AGENT BROWSER tasks - login flows, scraping, form automation, and more.",
+    "Step-by-step guides for Agent Browser — basic navigation, login flow automation, data extraction, and MCP integration. Practical examples with real commands.",
+  alternates: { canonical: "https://agentbrowser.fun/how-to" },
+  openGraph: {
+    url: "https://agentbrowser.fun/how-to",
+    title: "Agent Browser How-To Guides",
+    description:
+      "Practical guides: navigate pages, automate login flows, extract data, and integrate Agent Browser with MCP clients like Claude Desktop and Cursor.",
+  },
 };
 
 const guides = [

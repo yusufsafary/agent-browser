@@ -1,7 +1,18 @@
 import { CodeBlock } from "@/components/code-block";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Network Control" };
+export const metadata: Metadata = {
+  title: "Network Control",
+  description:
+    "Block URL patterns, throttle network speed, and inspect traffic with Agent Browser network commands. Perfect for testing agents under slow connections or blocking trackers.",
+  alternates: { canonical: "https://agentbrowser.fun/docs/network" },
+  openGraph: {
+    url: "https://agentbrowser.fun/docs/network",
+    title: "Agent Browser Network Control",
+    description:
+      "Block requests, throttle to slow-3g/4g, and inspect network activity. Full CDP-based network control for browser automation.",
+  },
+};
 
 export default function NetworkPage() {
   return (

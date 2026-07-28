@@ -1,7 +1,18 @@
 import { CodeBlock } from "@/components/code-block";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Recording" };
+export const metadata: Metadata = {
+  title: "Recording",
+  description:
+    "Record Agent Browser sessions as MP4 or WebM video. Use for debugging automation runs, creating demos, or keeping audit logs of agent actions.",
+  alternates: { canonical: "https://agentbrowser.fun/docs/recording" },
+  openGraph: {
+    url: "https://agentbrowser.fun/docs/recording",
+    title: "Agent Browser Session Recording",
+    description:
+      "Record browser sessions as MP4 or WebM. Debug automation runs, create demos, and maintain audit logs of agent actions.",
+  },
+};
 
 export default function RecordingPage() {
   return (

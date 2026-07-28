@@ -2,7 +2,18 @@ import { CodeBlock } from "@/components/code-block";
 import Link from "next/link";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Commands" };
+export const metadata: Metadata = {
+  title: "Commands Reference",
+  description:
+    "Complete reference for all 50+ Agent Browser commands — navigation, interaction, screenshots, snapshots, network control, storage, tabs, iframes, and debugging.",
+  alternates: { canonical: "https://agentbrowser.fun/docs/commands" },
+  openGraph: {
+    url: "https://agentbrowser.fun/docs/commands",
+    title: "Agent Browser Command Reference",
+    description:
+      "All 50+ Agent Browser commands: open, click, fill, snapshot, screenshot, network block, storage, tabs, and more.",
+  },
+};
 
 export default function CommandsPage() {
   return (

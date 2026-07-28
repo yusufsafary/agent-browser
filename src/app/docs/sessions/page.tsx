@@ -1,7 +1,18 @@
 import { CodeBlock } from "@/components/code-block";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Sessions" };
+export const metadata: Metadata = {
+  title: "Sessions",
+  description:
+    "Agent Browser sessions carry independent browser state — cookies, localStorage, auth tokens, and open tabs. Use named sessions and profiles to isolate accounts.",
+  alternates: { canonical: "https://agentbrowser.fun/docs/sessions" },
+  openGraph: {
+    url: "https://agentbrowser.fun/docs/sessions",
+    title: "Agent Browser Sessions",
+    description:
+      "Manage named browser sessions and persistent profiles. Each session carries its own cookies, storage, and auth state.",
+  },
+};
 
 export default function SessionsPage() {
   return (

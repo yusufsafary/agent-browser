@@ -1,7 +1,18 @@
 import { CodeBlock } from "@/components/code-block";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Vercel" };
+export const metadata: Metadata = {
+  title: "Vercel Deployment",
+  description:
+    "Run Agent Browser automations inside Vercel Serverless Functions using the @agent-browser/sandbox package. Zero-config cloud browsing with automatic backend routing.",
+  alternates: { canonical: "https://agentbrowser.fun/docs/vercel" },
+  openGraph: {
+    url: "https://agentbrowser.fun/docs/vercel",
+    title: "Agent Browser on Vercel",
+    description:
+      "Use @agent-browser/sandbox to run browser automations in Vercel Serverless Functions. Deploy without managing Chrome infrastructure.",
+  },
+};
 
 export default function VercelPage() {
   return (

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -12,6 +13,19 @@ import {
   ChevronRight,
   Download,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Agent Browser | Browser Automation CLI for Agents & LLMs",
+  description:
+    "Agent Browser is a native Rust CLI for browser automation. 50+ commands, ref-based snapshots, MCP server, Solana wallet auth. Works with Claude Code, Cursor, and any shell-capable agent.",
+  alternates: { canonical: "https://agentbrowser.fun" },
+  openGraph: {
+    url: "https://agentbrowser.fun",
+    title: "Agent Browser | Browser Automation CLI for Agents & LLMs",
+    description:
+      "Native Rust CLI for browser automation. 50+ commands, ref-based snapshots, MCP server, live dashboard. Works with Claude, Cursor, and any shell-capable agent.",
+  },
+};
 
 const features = [
   {
@@ -139,7 +153,7 @@ export default function HomePage() {
           <p className="text-base sm:text-lg text-[#9090A8] text-center max-w-2xl mx-auto mb-10 leading-relaxed">
             The fastest CLI browser automation platform on the planet. Native
             Rust performance, ref-based element targeting, and Web3-native
-            identity. From Claude to Cursor to your own agent.
+            identity. From Claude Code to Cursor to any shell-capable agent.
           </p>
 
           {/* CTA buttons */}
@@ -236,7 +250,7 @@ export default function HomePage() {
               Everything your agent needs
             </h2>
             <p className="text-[#9090A8] text-sm sm:text-base max-w-xl mx-auto">
-              Designed from scratch for AI workflows. Not a Puppeteer wrapper. Not a headless patch.
+              Designed from scratch for agents running in production. Not a Puppeteer wrapper. Not a headless patch.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -276,7 +290,7 @@ export default function HomePage() {
       <section className="py-16 sm:py-20 border-t border-[#1A1A2E]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-xs text-[#4B4B60] uppercase tracking-widest mb-8 font-medium">
-            Works with every major AI agent
+            Runs everywhere your agent runs
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8">
             {[
@@ -316,7 +330,7 @@ export default function HomePage() {
               Ready to automate at agent speed?
             </h2>
             <p className="text-[#9090A8] mb-8 relative text-sm sm:text-base">
-              Join developers building the next generation of AI-driven workflows.
+              Install in 60 seconds. Full browser control — navigation, forms, screenshots, network, storage, and more.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 relative">
               <Link

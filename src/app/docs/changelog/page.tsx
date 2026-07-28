@@ -1,6 +1,17 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Changelog" };
+export const metadata: Metadata = {
+  title: "Changelog",
+  description:
+    "Agent Browser release history. v1.0 — native Rust CLI, Solana wallet auth, 50+ commands, MCP server, live dashboard, video recording, and Vercel sandbox integration.",
+  alternates: { canonical: "https://agentbrowser.fun/docs/changelog" },
+  openGraph: {
+    url: "https://agentbrowser.fun/docs/changelog",
+    title: "Agent Browser Changelog",
+    description:
+      "Release notes for Agent Browser. Track new features, fixes, and breaking changes across all versions.",
+  },
+};
 
 const releases = [
   {

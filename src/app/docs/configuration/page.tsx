@@ -1,7 +1,18 @@
 import { CodeBlock } from "@/components/code-block";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Configuration" };
+export const metadata: Metadata = {
+  title: "Configuration",
+  description:
+    "Configure Agent Browser with agent-browser.json. Set persistent defaults for headed mode, proxy, user agent, profile, and more. Override with env vars or CLI flags.",
+  alternates: { canonical: "https://agentbrowser.fun/docs/configuration" },
+  openGraph: {
+    url: "https://agentbrowser.fun/docs/configuration",
+    title: "Agent Browser Configuration",
+    description:
+      "Set up agent-browser.json for persistent defaults. Configure headed mode, proxy, user agent, profile path, and Chrome binary location.",
+  },
+};
 
 export default function ConfigurationPage() {
   return (

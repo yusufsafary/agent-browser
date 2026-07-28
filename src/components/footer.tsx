@@ -61,11 +61,28 @@ export function Footer() {
           <p className="text-xs text-[#4B4B60]">
             &copy; {new Date().getFullYear()} Agent Browser. Built for the agentic web.
           </p>
-          <div className="flex items-center gap-1 text-xs text-[#4B4B60]">
-            <span>Powered by</span>
-            <span className="text-[#00E5CC] font-mono">Rust</span>
-            <span>+</span>
-            <span className="text-[#7C3AED] font-mono">Solana</span>
+          <div className="flex items-center gap-4 flex-wrap justify-center sm:justify-end">
+            <a
+              href="https://orynth.dev/projects/agent-browser"
+              target="_blank"
+              rel="noopener"
+              aria-label="Featured on Orynth"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://orynth.dev/api/badge/agent-browser?theme=dark&style=default"
+                alt="Featured on Orynth"
+                width={130}
+                height={40}
+                style={{ height: 40, width: "auto" }}
+              />
+            </a>
+            <div className="flex items-center gap-1 text-xs text-[#4B4B60]">
+              <span>Powered by</span>
+              <span className="text-[#00E5CC] font-mono">Rust</span>
+              <span>+</span>
+              <span className="text-[#7C3AED] font-mono">Solana</span>
+            </div>
           </div>
         </div>
       </div>

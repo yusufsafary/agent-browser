@@ -2,7 +2,18 @@ import { CodeBlock } from "@/components/code-block";
 import Link from "next/link";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Quick Start" };
+export const metadata: Metadata = {
+  title: "Quick Start",
+  description:
+    "Get Agent Browser running in under 5 minutes. Install, download Chrome, take your first snapshot, and interact with elements using refs — all from the command line.",
+  alternates: { canonical: "https://agentbrowser.fun/docs/quickstart" },
+  openGraph: {
+    url: "https://agentbrowser.fun/docs/quickstart",
+    title: "Agent Browser Quick Start",
+    description:
+      "Install Agent Browser, download Chrome, and run your first automation in under 5 minutes.",
+  },
+};
 
 export default function QuickStartPage() {
   return (

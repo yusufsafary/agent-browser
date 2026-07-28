@@ -1,7 +1,18 @@
 import { CodeBlock } from "@/components/code-block";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Docker" };
+export const metadata: Metadata = {
+  title: "Docker",
+  description:
+    "Run Agent Browser in Docker using the official agentbrowser/agent-browser image. All system Chrome dependencies pre-installed. Includes docker-compose examples.",
+  alternates: { canonical: "https://agentbrowser.fun/docs/docker" },
+  openGraph: {
+    url: "https://agentbrowser.fun/docs/docker",
+    title: "Agent Browser in Docker",
+    description:
+      "Official Docker image with all Chrome dependencies pre-installed. Dockerfile and docker-compose examples included.",
+  },
+};
 
 export default function DockerPage() {
   return (
