@@ -136,6 +136,7 @@ export default function RootLayout({
         <link rel="canonical" href={BASE_URL} />
         <meta name="theme-color" content="#050508" />
         <meta name="color-scheme" content="dark" />
+        <meta name="ory-verify" content="orynth-1901c84d6dfd4c6e8ffd7286bcb3f5d7" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
